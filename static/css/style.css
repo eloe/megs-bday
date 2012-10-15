@@ -1,0 +1,54 @@
+@-webkit-keyframes blink {
+  from { opacity: 1.0; }
+  to { opacity: 0.0; }
+}
+
+* {
+    margin:0px;
+    padding:0px;
+
+    font-family: "proxima-nova", sans-serif;
+    outline:none;
+    color:#00ff00;
+}
+
+body {
+    background-image:url('../images/backgrounds/bg2.png');
+}
+
+h1 {
+  font-size:100px;
+  -webkit-animation-name: blink;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: cubic-bezier(1.0,0,0,1.0);
+  -webkit-animation-duration: 1s;
+}
+
+div {
+    text-align: center;
+}
+
+.content-body {
+    width:900px;
+    margin:auto;
+    padding-top:10px;
+}
+
+.decadegif {
+
+}
+
+.decadegif img {
+    height:250px;
+    margin:20px;
+}
+
+.partygif h3 {
+    color:#ff0000;
+    font-size:50px;
+}
+
+.partygif img {
+    height:350px;
+    margin:20px;
+}
