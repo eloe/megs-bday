@@ -7,7 +7,7 @@
     margin:0px;
     padding:0px;
 
-    font-family: "proxima-nova", sans-serif;
+    font-family:  "Times New Roman";
     outline:none;
     color:#00ff00;
 }
@@ -26,12 +26,64 @@ h1 {
 
 div {
     text-align: center;
+    font-size:55px;
+    color:#ff00f0;
+
+}
+
+a {
+  color:#f0f0f0;
+}
+
+form {
+  font-size: 20px;
+}
+
+form p {
+  margin-bottom: 20px;
+}
+
+input {
+  color:#000;
+  height:30px;
+  width:100px;
+}
+
+textarea {
+  font-size:20px;
+  color:#000;
+}
+
+.guestbook-entries a {
+  font-size:25px;
+  float:right;
+}
+
+.guestbook-entry {
+  margin-bottom: 20px;
+  font-size:10px;
+}
+
+.guestbook-entry div {
+  font-size:25px;
+}
+
+.guestbook-form {
+  margin-top: 40px;
+}
+
+.submit {
+  height:50px;
+  width:150px;
+  font-size:50px;
+  color:#000;
 }
 
 .content-body {
-    width:900px;
+    width:1000px;
     margin:auto;
     padding-top:10px;
+    background-color:rgba(0,0,0,0.5);
 }
 
 .decadegif {
@@ -45,7 +97,7 @@ div {
 
 .partygif h3 {
     color:#ff0000;
-    font-size:50px;
+    font-size:55px;
 }
 
 .partygif img {

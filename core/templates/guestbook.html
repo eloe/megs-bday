@@ -1,0 +1,23 @@
+{% extends "layout/base.html" %}
+{% load i18n %}
+
+{% block content %}
+    <h1>Guestbook</h1>
+    <div class="guestbook-entries">
+        <a href="{% url core.views.index %}">Back to the party</a>
+        {% for entry in guestbook_entrys %}
+            <div class="guestbook-entry">
+                <div>"{{ entry.message }}"</div>
+                <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- {{ entry.name }}</div>
+            </div>
+        {% endfor %}
+    </div>
+    <hr/>
+    <div class="guestbook-form">
+        <form action="{% url core.views.guestbook %}" method="post">
+            {% csrf_token %}
+            {{ form.as_p }}
+            <input type="submit" value="Submit" class="submit" />
+        </form>
+    </div>
+{% endblock %}

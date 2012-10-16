@@ -1,23 +1,17 @@
-<!doctype html>
-<html>
-    <head>
-        <link rel="stylesheet" type="text/css" media="screen, print" href="{{ STATIC_URL }}css/style.css" />
-        <title>*~TO MEGHAN'S 90's BIRTHDAY PARTY!!!~*</title>
-    </head>
-    <body>
-        <div class="content-body">
+{% extends "layout/base.html" %}
+{% load i18n %}
+
+{% block content %}
             <h1>YOU'RE INVITED...</h1>
-            <img src="{{ STATIC_URL }}images/90scollage.jpg" />
+            <img src="{{ STATIC_URL }}images/90scollage.jpg" width="600px"/>
             <div>*~TO MEGHAN'S 90's BIRTHDAY PARTY!!!~*</div>
             <div>
                 <div>WHEN: Saturday Nov 10 at 9:30pm</div>
                 <div>WHERE: The Rendezvous Grotto (2322 2nd Ave, Seattle)</div>
-                <div>Sign the guestbook to RSVP!</div>
-                <div>[guestbook link]</div>
+                <div><a href="{% url core.views.guestbook %}">Sign the guestbook to RSVP!</a></div>
             </div>
             <div>
-                <div>WHAT:</div>
-                <div>>A TOTAL CELEBRATION OF THE DECADE THAT BROUGHT US...</div>
+                <div>WHAT: A TOTAL CELEBRATION OF THE DECADE THAT BROUGHT US...</div>
                 <div>
                     <div class="decadegif"><img src="{{ STATIC_URL }}images/decadegifs/1boymeetsworld.gif"/></div>
                     <div class="decadegif"><img src="{{ STATIC_URL }}images/decadegifs/2leoandkate.gif" /></div>
@@ -33,9 +27,9 @@
                 <div>THIS PARTY IS GONNA BE THE BOMB! BOOYA!</div>
                 <div>So put on your 90s BEST...</div>
                 <div>
-                    [nsync.jpg]
-                    [clarissa.jpg]
-                    [tlc.jpg]
+                    <div><img src="{{ STATIC_URL }}images/partygifs/nsync.jpeg" alt="N'SYNC" /></div>
+                    <div><img src="{{ STATIC_URL }}images/partygifs/clarissa.jpeg" alt="Clarissa Explain's It All" /></div>
+                    <div><img src="{{ STATIC_URL }}images/partygifs/tlc.jpeg" alt="TLC" /></div>
                 </div>
                 <div>And get ready to PARTY, 90s STYLE!</div>
                 <div>WE WILL HAVE...</div>
@@ -78,6 +72,5 @@
                 </div>
                 <div><h1>AAAAAAAALRIGHTY THEN! Hope you can make it!</h1></div>
             </div>
-        </div>
-    </body>
+    {% endblock %}
 </html>

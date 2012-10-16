@@ -16,6 +16,7 @@ urlpatterns = patterns('',
     # url(r'^admin/', include(admin.site.urls)),
 
 	(r'^$', "core.views.index"),
+    (r'^guestbook/$', "core.views.guestbook"),
     (r'^shop/', include('hardlycode.apps.store.products.urls')),
    	# Uncomment the next line to enable the admin:
 	(r'^admin/', include(admin.site.urls)),

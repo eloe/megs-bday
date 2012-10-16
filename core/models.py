@@ -9,7 +9,7 @@ class GuestbookEntry(models.Model):
     modified_date = models.DateTimeField(auto_now=True)
 
     @staticmethod
-    def get_all_entries:
+    def get_all_entries():
         return GuestbookEntry.objects.filter(display__exact=True).order_by('-created_date',)
 
     def __unicode__(self):
