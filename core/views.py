@@ -5,6 +5,9 @@ from core.models import *
 from core.forms import *
 
 def index(request, template_name='index.html'):
+    return HttpResponseRedirect(reverse('core.views.bday')) # Redirect after POST
+
+def bday(request, template_name='index.html'):
     return _render_with_context(request, template_name, { })
 
 def guestbook(request, template_name="guestbook.html"):
